@@ -9,7 +9,7 @@ createLightbox();
 function createGalleryMarkup(items) {
   return items
     .map(
-      (item) => `<a class="gallery__link" href="${item.original}">
+      (item) => `<a class="gallery__item" href="${item.original}">
       <img class="gallery__image" src="${item.preview}" alt="${item.description}"/>
       </a>`
     )
